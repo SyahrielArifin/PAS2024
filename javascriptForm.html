@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <title>Menghitung Volume Balok</title>
+    <style>
+       body { text-align: center; }
+        h2 { margin: 0; }
+        input { width: 75px; }
+    </style>
+</head>
+<br><br>
+<br><br>
+<br><br>
+<body>
+    <body style = "color:blue">
+    <h2>PROGRAM MENGHITUNG VOLUME BALOK</h2>
+</body>
+    <br><br>
+    <!-- Input Panjang -->
+    <span style =  "color:red" >Panjang  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
+    </span><input type="number" id="panjang">
+    <br>
+    <br>
+    <!-- Input Lebar -->
+    <span style =  "color:red" >Lebar  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
+    </span><input type="number" id="lebar">
+    <br>
+    <br>
+    <!-- Input Tinggi -->
+    <span style =  "color:red" >Tinggi  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
+    </span><input type="number" id="tinggi">
+    <br>
+    <br>
+    <br>
+    <button onclick="hitungVolume()"><br> &nbsp; &nbsp; &nbsp;HITUNG VOLUME &nbsp; &nbsp; &nbsp;<br><br></button>
+    <p id="hasil"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <body>
+        <h2 style = "color:olive">Muhamad Syahriel Arifin</h2>
+    </body>
+    <script>
+        // Hitung Volume
+        function hitungVolume() {
+            let panjang = document.getElementById("panjang").value
+            let lebar = document.getElementById("lebar").value
+            let tinggi = document.getElementById("tinggi").value
+            let hasil = document.getElementById("hasil")
+            let volume = panjang * lebar * tinggi
+            hasil.innerText = "Volume Balok : " + volume
+        }
+    </script>
+</body>
+</html>
